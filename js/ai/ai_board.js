@@ -3,7 +3,7 @@
 
 const gamePadSim = new GamePadSimulator();
 const Cacher = new CacheManager();
-const AI = new AIBoard(GameManager, gamePadSim, 6, 'highest', false);
+const AI = new AIBoard(GameManager, gamePadSim, 4, 'lowest', false);
 
 function AIBoard(GameManager, gamePadSim, calcDepth, mode='highest', cooperate=false) {
 	this.init = init;
